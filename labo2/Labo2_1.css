@@ -1,0 +1,26 @@
+
+    .button-transition{
+        background-color: rgb(99, 130, 98);
+        color: white;
+        font-family: sans-serif, monospace;
+        font-variant: small-caps;
+        font-size: medium;
+        border: none;
+        height: 40px;
+        width: 100px;
+        border-radius: 20px;
+        margin-right: 8px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .button-transition:hover{
+        background-color: rgb(65, 111, 93);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-transition:active{
+        opacity: 0.8;
+    }
+
+ 

@@ -1,0 +1,35 @@
+.color-change{
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: rgb(213, 177, 200);
+    border-radius: 10px;
+}
+
+.color-change:hover{
+    animation: colorchange 3s ease-in infinite;
+}
+
+@keyframes colorchange{
+   0% 
+   {background-color: rgb(213, 177, 200)}
+   10% 
+   {background-color: rgb(197, 122, 195)}
+   20% 
+   {background-color: rgb(150, 75, 184)}
+   30% 
+   {background-color: rgb(116, 85, 177)}
+   40%, 50% 
+   {background-color: rgb(98, 82, 188)}
+   60% 
+   {background-color: rgb(116, 85, 177)}
+   70% 
+   {background-color: rgb(150, 75, 184)}
+   80% 
+   {background-color: rgb(197, 122, 195)}
+   100% 
+   {background-color: rgb(213, 177, 200)}
+
+}
