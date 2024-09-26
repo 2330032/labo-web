@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--Utiliser l'Inspector des outils de développement pour trouver un élément HTML qui est caché
+sur la page.-->
+
+<!--1. Créer une page HTML :
+Copie le code suivant dans un fichier HTML (par exemple, index.html ) et ouvre-le dans
+ton navigateur.-->
+
+<html lang="fr"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Exercice d'Inspection</title>
+        <script>
+            document.getElementById('revealButton').addEventListener('click',
+            function() {
+            document.getElementById('hElement').style.display = 'block';
+            document.getElementById('hElement').innerText = "Ceci est un élément caché !";});
+        </script>
+            <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                padding: 20px;
+            }
+            #hElement {
+                display: none; /* Cet élément est caché */
+                background-color: #ffcc00;
+                padding: 10px;
+                margin-top: 20px;
+                border: 1px solid #333;
+            }
+            .noise {
+                background-color: #e0e0e0;
+                padding: 15px;
+                margin: 10px 0;
+                border: 1px dashed #999;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Bienvenue sur ma page</h1>
+            <p>Cliquez sur le bouton ci-dessous pour révéler un élément caché.</p>
+            <button id="revealButton">Révéler l'élément caché</button>
+            <div class="noise">
+                <h2>Section 1</h2>
+                <p>Ceci est un paragraphe.</p>
+                <img src="https://via.placeholder.com/150" alt="Image de bruit">
+            </div>
+            <div class="noise">
+                <h2>Section 2</h2>
+                <p>Un autre paragraphe. Ignorez-le ?</p>
+                <img src="https://via.placeholder.com/150" alt="Image de bruit">
+            </div>
+            <div id="hElement">Je suis un élément</div>
+        </body>
+</html>
