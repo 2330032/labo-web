@@ -37,8 +37,25 @@
     font-weight: 600;
  }
 
+ .rstbtn{
+  width: 100px;
+  height: 45px;
+  font:
+      Helvetica,
+      sans-serif;
+  font-weight: 600;    
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 2px black;
+  transition: active;
+ }
+
+ .rstbtn:active{
+  box-shadow: inset 1px 1px 2px black;
+ }
+
  /* .button:disabled{
-ASas
+
  } */
 
  p{
