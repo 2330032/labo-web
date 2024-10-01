@@ -1,5 +1,6 @@
-    var turnFlag = 0;
-    var btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
+var turnFlag = 0;
+var btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
+var winner;
 
     btn1 = document.getElementById("b1");
     btn2 = document.getElementById("b2");
@@ -46,33 +47,54 @@ function playerTurnFlag(){
     }
 }
 
+function onWin(){
+    btn1.disabled = true;
+    btn2.disabled = true;
+    btn3.disabled = true;
+    btn4.disabled = true;
+    btn5.disabled = true;
+    btn6.disabled = true;
+    btn7.disabled = true;
+    btn8.disabled = true;
+    btn9.disabled = true;
+
+    // Confetti + declare winner
+
+}
+
 function gameStatusCheck(){
- var winner;
-    if(btn1.innerHTML === btn2.innerHTML && btn2.innerHTML === btn3.innerHTML){
+
+    if(btn1.innerHTML === btn2.innerHTML && btn2.innerHTML === btn3.innerHTML && btn1.innerHTML !== ""){
        winner = btn1.innerHTML;       
-        // End game
-        
+        onWin();
     }
-    if(btn1.innerHTML === btn5.innerHTML && btn5.innerHTML === btn9.innerHTML){
+    if(btn1.innerHTML === btn5.innerHTML && btn5.innerHTML === btn9.innerHTML && btn1.innerHTML !== ""){
         winner = btn1.innerHTML;
+        onWin();
     }
-    if(btn1.innerHTML === btn4.innerHTML && btn4.innerHTML === btn7.innerHTML){
+    if(btn1.innerHTML === btn4.innerHTML && btn4.innerHTML === btn7.innerHTML && btn1.innerHTML !== ""){
         winner = btn1.innerHTML;
+        onWin();
     }
-    if(btn2.innerHTML === btn5.innerHTML && btn5.innerHTML === btn8.innerHTML){
+    if(btn2.innerHTML === btn5.innerHTML && btn5.innerHTML === btn8.innerHTML && btn2.innerHTML !== ""){
         winner = btn2.innerHTML;
+        onWin();
     }
-    if(btn3.innerHTML === btn5.innerHTML && btn5.innerHTML === btn7.innerHTML){
+    if(btn3.innerHTML === btn5.innerHTML && btn5.innerHTML === btn7.innerHTML && btn3.innerHTML !== ""){
         winner = btn3.innerHTML;
+        onWin();
     }
-    if(btn3.innerHTML === btn6.innerHTML && btn6.innerHTML === btn9.innerHTML){
+    if(btn3.innerHTML === btn6.innerHTML && btn6.innerHTML === btn9.innerHTML  && btn3.innerHTML !== ""){
         winner = btn3.innerHTML;
+        onWin();
     }
-    if(btn4.innerHTML === btn5.innerHTML && btn5.innerHTML === btn6.innerHTML){
+    if(btn4.innerHTML === btn5.innerHTML && btn5.innerHTML === btn6.innerHTML && btn4.innerHTML !== ""){
         winner = btn4.innerHTML;
+        onWin();
     }
-    if(btn7.innerHTML === btn8.innerHTML && btn8.innerHTML === btn9.innerHTML){
+    if(btn7.innerHTML === btn8.innerHTML && btn8.innerHTML === btn9.innerHTML && btn7.innerHTML !== ""){
         winner = btn7.innerHTML;
+        onWin();
     }
 }
 
