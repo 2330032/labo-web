@@ -8,21 +8,51 @@ particulière) et une chaîne de caractères pour mettre à jour le contenu de l
             <meta charset=utf-8 />
             <title>Changer le contenu d'une cellule</title>
     </head>
-
+  
     <body>
         <table id="myTable" border="1">
+
         <tr><td>Row1 cell1</td>
         <td>Row1 cell2</td></tr>
+
         <tr><td>Row2 cell1</td>
         <td>Row2 cell2</td></tr>
+
         <tr><td>Row3 cell1</td>
         <td>Row3 cell2</td></tr>
 
-    </table>
+        </table>
     
     <form>
-        <input type="button" onclick="changeContent()"
-        value="Changer le contenu">
-    </form>
+        <div>
+            <label for="column">Select a column number:</label>
+            <input type="number" id="colNumber" name="column">
+        </div>
+        <div>
+            <label for="row">Select a row number:</label>
+            <input type="number" id="rowNumber" name="row">
+        </div>
+        <div>
+            <label for="newText">Enter text to be implemented:</label>
+            <input type="text" id="newTxt" name="newText">
+        </div>        
+        <div>
+            <input type="button" onclick="changeContent()"
+            value="Change cell content">
+        </div>
+
+    </form>    
+    <script>
+        function changeContent(){
+            let colIndex = document.getElementById("colNumber").value;
+            let rowIndex = document.getElementById("rowNumber").value;
+            let newString = document.getElementById("newTxt").value;
+            let myTable = document.getElementById("myTable");
+
+           var cell =  myTable.rows[rowIndex].cells;
+           cell[colIndex].innerHTML = newString;
+
+        }  
+    </script>
     </body>
-    </html>
+</html>
