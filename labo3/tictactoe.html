@@ -15,31 +15,31 @@
 
         <div class="container">
             <div name="1">
-                <button class="button"></button>
+                <button id="b1" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="2">
-                <button class="button"></button>
+                <button id="b2" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="3">
-                <button class="button"></button>
+                <button id="b3" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="4">
-                <button class="button"></button>
+                <button id="b4" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="5">
-                <button class="button"></button>
+                <button id="b5" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="6">
-                <button class="button"></button>
+                <button id="b6" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="7">
-                <button class="button"></button>
+                <button id="b7" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="8">
-                <button class="button"></button>
+                <button id="b8" class="button" onclick="onButtonClick(this)"></button>
             </div>
             <div name="9">
-                <button class="button"></button>
+                <button id="b9" class="button" onclick="onButtonClick(this)"></button>
             </div>
         </div>
         
@@ -47,6 +47,12 @@
         <p>Player 1 : X</p>
         <p>Player 2 : O</p>
 
-        <script src="tictactoe.js"></script>
-    </body>
+        <div>
+            <input type="button" name="reset" id="reset" value="Reset game" onclick="init()">
+        </div>
+
+    </body>        
+    
+    <script src="tictactoe.js"></script>
+
 </html>
