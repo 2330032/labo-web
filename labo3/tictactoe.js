@@ -2,15 +2,15 @@ var turnFlag = 0;
 var btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
 var winner;
 
-    btn1 = document.getElementById("b1");
-    btn2 = document.getElementById("b2");
-    btn3 = document.getElementById("b3");
-    btn4 = document.getElementById("b4");
-    btn5 = document.getElementById("b5");
-    btn6 = document.getElementById("b6");
-    btn7 = document.getElementById("b7");
-    btn8 = document.getElementById("b8");
-    btn9 = document.getElementById("b9");
+btn1 = document.getElementById("b1");
+btn2 = document.getElementById("b2");
+btn3 = document.getElementById("b3");
+btn4 = document.getElementById("b4");
+btn5 = document.getElementById("b5");
+btn6 = document.getElementById("b6");
+btn7 = document.getElementById("b7");
+btn8 = document.getElementById("b8");
+btn9 = document.getElementById("b9");
 
 
 function init(){
