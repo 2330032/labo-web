@@ -29,4 +29,17 @@ dans une fenêtre d'alerte.-->
 
         </form>
     </body>
+    <script>
+        function getOptions(){
+            let opt = document.getElementById("mySelect");
+            var cntr = document.getElementById("mySelect").options.length;
+            var txt = "";
+
+            for(var i = 0; i < cntr; i++){
+                txt = txt + opt.options[i].text + "\n";
+            }
+
+            alert("Nbr d'options : " + cntr  + "\n\n" + txt);
+        }
+    </script>
 </html>
