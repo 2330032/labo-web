@@ -1,0 +1,13 @@
+1. Quel est l'élément HTML caché que tu as trouvé ?
+
+	<div id="hElement">Je suis un élément</div>
+
+	Un carré jaune avec le texte "Je suis un élément"
+
+2. Quelle propriété CSS était utilisée pour cacher cet élément ?
+
+	display = none;
+
+3. Que se passe-t-il lorsque tu cliques sur le bouton ?
+
+	Rien, le bouton ne fonctionne pas. Ceci dit, je crois qu'il devrait changer "display = none;" pour "display = block;".
